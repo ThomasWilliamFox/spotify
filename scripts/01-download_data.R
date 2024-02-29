@@ -9,18 +9,36 @@
 
 
 #### Workspace setup ####
-library(opendatatoronto)
+library(babynames)
+library(gh)
+library(here)
+library(httr)
+library(janitor)
+library(jsonlite)
+library(knitr)
+library(lubridate)
+library(pdftools)
+library(purrr)
+library(rvest)
+library(spotifyr)
+library(tesseract)
 library(tidyverse)
+library(usethis)
+library(xml2)
 # [...UPDATE THIS...]
 
 #### Download data ####
-# [...ADD CODE HERE TO DOWNLOAD...]
 
+NASA<-
+  GET("https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=2024-02-29")
+content(NASA)
 
+content(NASA)$date
+content(NASA)$title
+content(NASA)$url
+
+knitr::include_graphics(content(NASA)$url)
 
 #### Save data ####
-# [...UPDATE THIS...]
-# change the_raw_data to whatever name you assigned when you downloaded it.
-write_csv(the_raw_data, "inputs/data/raw_data.csv") 
 
          
