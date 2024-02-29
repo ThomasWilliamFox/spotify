@@ -1,13 +1,12 @@
 ---
-title: "My title"
-subtitle: "My subtitle if needed"
+title: "Spotify API Tutorial"
+subtitle: ""
 author: 
-  - First author
-  - Another author
-thanks: "Code and data are available at: LINK."
+  - Thomas Fox
+thanks: "Code and data are available at: https://github.com/ThomasWilliamFox/spotify."
 date: today
 date-format: long
-abstract: "First sentence. Second sentence. Third sentence. Fourth sentence."
+abstract: ""
 format: pdf
 number-sections: true
 bibliography: references.bib
